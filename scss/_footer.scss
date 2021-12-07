@@ -1,0 +1,83 @@
+$color-secundario: #3A3E53;
+
+footer {
+    background-color: $color-secundario;
+    padding-top: 15px;
+
+    .row_footer { 
+        padding-top: 25px;
+        
+        .logo {
+            img {
+                transition: transform 250ms;
+            }
+    
+            img:hover {
+                transform: scale(1.1);
+                transition: all ease 500ms; 
+            }   
+        }
+        .fab {
+            font-size: 37px;
+            color: #FFFF;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .nav_footer a {
+            font-size: 18px;
+            color: #FFFF; 
+            padding-right: 1em;
+            padding-left: 1em;
+            transition: transform 250ms;
+            padding-top: 12px;
+        }
+
+        .nav_footer a:hover { color: #000; transform: translateY(-4px);}
+
+            .area_circulo {
+                font-size: 0.5rem;
+                border-radius: 50%;
+                transition: all 0.2s ease;
+                }
+                .area_circulo:hover {
+                animation: circle-anim 0.3s ease forwards;
+                transition: all 0.4s ease;
+                }
+
+                    @keyframes circle-anim {
+                    0% {    
+                    }
+                    
+                    90%{
+                    padding: 0.32em;
+                    margin: -0.32em; 
+                    }
+                    
+                    100%{
+                    padding: 0.22em;
+                    margin: -0.22em; 
+                    }
+                }
+
+            .redes_fb:hover {
+                background: #3B5998; 
+            }
+            .redes_insta:hover {
+                background: #D22987;
+            }
+        }                
+}
+
+@media only screen and (max-width: 335px) {
+    footer {
+        .row_footer {
+            .nav_footer {
+                a {
+                 font-size: 12px;
+                 font-weight: bold;
+                }   
+            }
+        }
+    }
+}

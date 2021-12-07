@@ -1,0 +1,100 @@
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7a2aa; }
+  header .logo {
+    padding-right: 3em; }
+    header .logo img {
+      transition: transform 250ms; }
+      header .logo img:hover {
+        transform: scale(1.1);
+        transition: all ease 500ms; }
+  header .navbar-collapse {
+    display: flex;
+    justify-content: flex-end; }
+  header .navbar {
+    align-self: center; }
+    header .navbar .navbar-nav a {
+      font-size: 20px;
+      transition: transform 250ms;
+      padding-right: 1em !important;
+      padding-left: 2em !important; }
+      header .navbar .navbar-nav a:hover {
+        transition: transform 150ms;
+        transform: translateY(-6px); }
+
+footer {
+  background-color: #3A3E53;
+  padding-top: 15px; }
+  footer .row_footer {
+    padding-top: 25px; }
+    footer .row_footer .logo img {
+      transition: transform 250ms; }
+    footer .row_footer .logo img:hover {
+      transform: scale(1.1);
+      transition: all ease 500ms; }
+    footer .row_footer .fab {
+      font-size: 37px;
+      color: #FFFF;
+      padding-left: 15px;
+      padding-right: 15px; }
+    footer .row_footer .nav_footer a {
+      font-size: 18px;
+      color: #FFFF;
+      padding-right: 1em;
+      padding-left: 1em;
+      transition: transform 250ms;
+      padding-top: 12px; }
+    footer .row_footer .nav_footer a:hover {
+      color: #000;
+      transform: translateY(-4px); }
+    footer .row_footer .area_circulo {
+      font-size: 0.5rem;
+      border-radius: 50%;
+      transition: all 0.2s ease; }
+    footer .row_footer .area_circulo:hover {
+      animation: circle-anim 0.3s ease forwards;
+      transition: all 0.4s ease; }
+
+@keyframes circle-anim {
+  0% { }
+  90% {
+    padding: 0.32em;
+    margin: -0.32em; }
+  100% {
+    padding: 0.22em;
+    margin: -0.22em; } }
+    footer .row_footer .redes_fb:hover {
+      background: #3B5998; }
+    footer .row_footer .redes_insta:hover {
+      background: #D22987; }
+
+@media only screen and (max-width: 335px) {
+  footer .row_footer .nav_footer a {
+    font-size: 12px;
+    font-weight: bold; } }
+
+.jumbotron-fluid {
+  background-image: url(../img/portada-o.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 80vh; }
+
+.main_deck {
+  padding-top: 1.5em; }
+  .main_deck .card_index {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 3em; }
+    .main_deck .card_index img {
+      max-width: 25rem;
+      height: 80%; }
+    .main_deck .card_index .card-title {
+      padding-top: 1em; }
+
+@media only screen and (max-width: 335px) {
+  .jumbotron-fluid {
+    min-height: 60vh; }
+    .jumbotron-fluid h1 {
+      font-size: 50px; } }

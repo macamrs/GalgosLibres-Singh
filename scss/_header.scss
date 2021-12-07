@@ -1,0 +1,43 @@
+$color-principal: #f7a2aa;
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: $color-principal;
+
+    .logo {
+        padding-right: 3em;
+
+        img {
+            transition: transform 250ms;
+
+            &:hover {
+            transform: scale(1.1);
+            transition: all ease 500ms;   
+            }
+        }
+    }
+
+    .navbar-collapse {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .navbar {
+        align-self: center;
+
+        .navbar-nav {  
+            a {
+                font-size: 20px;
+                transition: transform 250ms;  
+                padding-right: 1em !important;
+                padding-left: 2em !important;
+
+                &:hover {
+                    transition: transform 150ms;
+                    transform: translateY(-6px);
+                }
+            }
+        }
+    }
+}
