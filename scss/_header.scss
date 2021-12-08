@@ -1,4 +1,5 @@
 $color-principal: #f7a2aa;
+@import "variables";
 
 header {
     display: flex;
@@ -28,8 +29,7 @@ header {
 
         .navbar-nav {  
             a {
-                font-size: 20px;
-                transition: transform 250ms;  
+                @include navitem;
                 padding-right: 1em !important;
                 padding-left: 2em !important;
 

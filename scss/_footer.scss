@@ -1,4 +1,4 @@
-$color-secundario: #3A3E53;
+@import "variables";
 
 footer {
     background-color: $color-secundario;
@@ -19,54 +19,35 @@ footer {
         }
         .fab {
             font-size: 37px;
-            color: #FFFF;
             padding-left: 15px;
             padding-right: 15px;
         }
 
         .nav_footer a {
-            font-size: 18px;
-            color: #FFFF; 
+            @include navitem;
+            color: black; 
             padding-right: 1em;
             padding-left: 1em;
-            transition: transform 250ms;
             padding-top: 12px;
         }
 
-        .nav_footer a:hover { color: #000; transform: translateY(-4px);}
+        .nav_footer a:hover { color: $color-blanco; transform: translateY(-4px);}
 
-            .area_circulo {
-                font-size: 0.5rem;
-                border-radius: 50%;
-                transition: all 0.2s ease;
-                }
-                .area_circulo:hover {
-                animation: circle-anim 0.3s ease forwards;
-                transition: all 0.4s ease;
-                }
+        .area_circulo .icon {
+                color: black;
+                transition: .5s;
+            }    
 
-                    @keyframes circle-anim {
-                    0% {    
-                    }
-                    
-                    90%{
-                    padding: 0.32em;
-                    margin: -0.32em; 
-                    }
-                    
-                    100%{
-                    padding: 0.22em;
-                    margin: -0.22em; 
-                    }
-                }
-
-            .redes_fb:hover {
-                background: #3B5998; 
+        .fa-instagram:hover  {
+                color: #D22987;
+                transition: .5s;
             }
-            .redes_insta:hover {
-                background: #D22987;
+        
+        .fa-facebook:hover {
+            color: #3b5999;
+            transition: .2s;
             }
-        }                
+    }
 }
 
 @media only screen and (max-width: 335px) {

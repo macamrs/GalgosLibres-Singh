@@ -1,0 +1,11 @@
+/*Variables aplicadas en partials*/
+
+$color-secundario: #3A3E53;
+$color-blanco: #FFFF;
+
+/*Mixin aplicado en header y footer*/
+
+@mixin navitem {
+    font-size: 20px;
+    transition: transform 250ms;
+}
