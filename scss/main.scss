@@ -1,4 +1,8 @@
 @import "variables";
-@import "header";
-@import "footer";
-@import "inicio";
+@import "layout/header";
+@import "layout/footer";
+@import "pages/inicio";
+@import "pages/nosotros";
+@import "pages/objetivo";
+@import "pages/colaborar";
+@import "pages/contacto";

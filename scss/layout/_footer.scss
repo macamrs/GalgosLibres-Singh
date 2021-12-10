@@ -1,7 +1,7 @@
 @import "variables";
 
 footer {
-    background-color: $color-secundario;
+    background-color: map-get($colores ,secundario);
     padding-top: 15px;
 
     .row_footer { 
@@ -31,7 +31,9 @@ footer {
             padding-top: 12px;
         }
 
-        .nav_footer a:hover { color: $color-blanco; transform: translateY(-4px);}
+        .nav_footer a:hover { 
+            color: map-get($colores, blanco); 
+            transform: translateY(-4px);}
 
         .area_circulo .icon {
                 color: black;

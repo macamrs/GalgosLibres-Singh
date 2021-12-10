@@ -1,7 +1,11 @@
-/*Variables aplicadas en partials*/
+/*Mapa aplicado en partials*/
 
-$color-secundario: #3A3E53;
-$color-blanco: #FFFF;
+$colores : (
+    rosa: #f7a2aa,
+    babyblue: #D4E8ED,
+    blanco: #FFFF,
+    secundario: #3A3E53,
+);
 
 /*Mixin aplicado en header y footer*/
 

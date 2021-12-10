@@ -1,10 +1,9 @@
-$color-principal: #f7a2aa;
 @import "variables";
 
-header {
+.header-1 {
     display: flex;
     flex-direction: column;
-    background-color: $color-principal;
+    background-color: map-get($colores, rosa);
 
     .logo {
         padding-right: 3em;
@@ -17,11 +16,6 @@ header {
             transition: all ease 500ms;   
             }
         }
-    }
-
-    .navbar-collapse {
-        display: flex;
-        justify-content: flex-end;
     }
 
     .navbar {
