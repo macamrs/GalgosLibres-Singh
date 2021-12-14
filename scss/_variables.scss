@@ -1,5 +1,3 @@
-/*Mapa aplicado en partials*/
-
 $colores : (
     rosa: #f7a2aa,
     babyblue: #D4E8ED,
@@ -7,9 +5,26 @@ $colores : (
     secundario: #3A3E53,
 );
 
-/*Mixin aplicado en header y footer*/
+$borde-secundario: 2px solid #3a3e53;
 
 @mixin navitem {
-    font-size: 20px;
+    font-size: 15px;
     transition: transform 250ms;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+
+@mixin contenedor__titulo {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    
+    h1 {
+        letter-spacing: 5px;
+        font-weight: bolder;
+        text-transform: uppercase;
+        border-style: solid none;
+        padding: 10px 0px 10px;
+    }
 }

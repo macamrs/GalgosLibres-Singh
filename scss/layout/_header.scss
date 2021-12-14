@@ -1,8 +1,8 @@
-@import "variables";
-
+/*HEADER*/
 .header-1 {
     display: flex;
     flex-direction: column;
+    /*APLICACION DE MAP - DECLARADO EN _VARIABLES - */
     background-color: map-get($colores, rosa);
 
     .logo {
@@ -23,6 +23,7 @@
 
         .navbar-nav {  
             a {
+                /*APLICACION DE MIXIN - DECLARADO EN _VARIABLES - */
                 @include navitem;
                 padding-right: 1em !important;
                 padding-left: 2em !important;
@@ -30,6 +31,7 @@
                 &:hover {
                     transition: transform 150ms;
                     transform: translateY(-6px);
+                    color: #FFFF;
                 }
             }
         }

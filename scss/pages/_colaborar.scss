@@ -1,0 +1,15 @@
+/*PAGE COLABORAR*/
+.contenedor_principal {
+    @include contenedor__titulo; 
+}
+
+.tarjeta-ayudar {
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+
+    .card_ayudar img {
+    width: 21rem;
+    height: 80%;
+    }
+}
+

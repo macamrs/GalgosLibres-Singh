@@ -1,7 +1,4 @@
-/*Mapa aplicado en partials*/
-/*Mixin aplicado en header y footer*/
-/*Mapa aplicado en partials*/
-/*Mixin aplicado en header y footer*/
+/*HEADER*/
 .header-1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10,6 +7,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  /*APLICACION DE MAP - DECLARADO EN _VARIABLES - */
   background-color: #f7a2aa;
 }
 
@@ -38,11 +36,15 @@
 }
 
 .header-1 .navbar .navbar-nav a {
-  font-size: 20px;
+  /*APLICACION DE MIXIN - DECLARADO EN _VARIABLES - */
+  font-size: 15px;
   -webkit-transition: -webkit-transform 250ms;
   transition: -webkit-transform 250ms;
   transition: transform 250ms;
   transition: transform 250ms, -webkit-transform 250ms;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
   padding-right: 1em !important;
   padding-left: 2em !important;
 }
@@ -54,11 +56,12 @@
   transition: transform 150ms, -webkit-transform 150ms;
   -webkit-transform: translateY(-6px);
           transform: translateY(-6px);
+  color: #FFFF;
 }
 
-/*Mapa aplicado en partials*/
-/*Mixin aplicado en header y footer*/
+/*FOOTER*/
 footer {
+  /*APLICACION DE MAP - DECLARADO EN _VARIABLES.SCSS - */
   background-color: #3A3E53;
   padding-top: 15px;
 }
@@ -88,11 +91,15 @@ footer .row_footer .fab {
 }
 
 footer .row_footer .nav_footer a {
-  font-size: 20px;
+  /*APLICACION DE MIXIN*/
+  font-size: 15px;
   -webkit-transition: -webkit-transform 250ms;
   transition: -webkit-transform 250ms;
   transition: transform 250ms;
   transition: transform 250ms, -webkit-transform 250ms;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
   color: black;
   padding-right: 1em;
   padding-left: 1em;
@@ -100,6 +107,7 @@ footer .row_footer .nav_footer a {
 }
 
 footer .row_footer .nav_footer a:hover {
+  /*APLICACION DE MAP - DECLARADO EN _VARIABLES.SCSS - */
   color: #FFFF;
   -webkit-transform: translateY(-4px);
           transform: translateY(-4px);
@@ -130,8 +138,9 @@ footer .row_footer .fa-facebook:hover {
   }
 }
 
+/*INDEX*/
 .jumbotron-fluid {
-  background-image: url(../img/portada-o.jpg);
+  background-image: url(../img/cover.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -164,5 +173,169 @@ footer .row_footer .fa-facebook:hover {
   .jumbotron-fluid h1 {
     font-size: 50px;
   }
+}
+
+/*PAGE NOSOTROS*/
+.contenedor_principal {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.contenedor_principal h1 {
+  letter-spacing: 5px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  border-style: solid none;
+  padding: 10px 0px 10px;
+}
+
+.featurette {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+}
+
+.featurette .card_nosotros {
+  margin: 5px 0px 15px 0px;
+}
+
+.featurette .featurette-image {
+  width: 25rem;
+  height: 80%;
+  border-radius: 20%;
+}
+
+/*PAGE OBJETIVO*/
+.card_objetivo {
+  margin-bottom: 20px;
+}
+
+.contenedor_principal {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.contenedor_principal h1 {
+  letter-spacing: 5px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  border-style: solid none;
+  padding: 10px 0px 10px;
+}
+
+/*PAGE COLABORAR*/
+.contenedor_principal {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.contenedor_principal h1 {
+  letter-spacing: 5px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  border-style: solid none;
+  padding: 10px 0px 10px;
+}
+
+.tarjeta-ayudar {
+  text-align: center;
+  padding: 20px 0px 20px 0px;
+}
+
+.tarjeta-ayudar .card_ayudar img {
+  width: 21rem;
+  height: 80%;
+}
+
+/*PAGE CONTACTO*/
+.contenedor_principal {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.contenedor_principal h1 {
+  letter-spacing: 5px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  border-style: solid none;
+  padding: 10px 0px 10px;
+}
+
+.container_contacto {
+  width: 80%;
+  margin: 4rem auto 4rem auto;
+}
+
+.container_contacto .formulario_contacto, .container_contacto .formulario_contacto .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*APLICACION DE @EXTEND*/
+}
+
+.container_contacto .formulario_contacto .form-group {
+  width: 80%;
+  /*APLICACION DE MAP - DECLARADO EN _VARIABLES - */
+}
+
+.container_contacto .formulario_contacto .form-group label {
+  font-size: 20px;
+}
+
+.container_contacto .formulario_contacto .form-group .form-control {
+  border-radius: 5px;
+  line-height: 22px;
+  border: 2px solid #3a3e53;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  outline: 0px;
+}
+
+.container_contacto .formulario_contacto .form-group .form-control:focus {
+  border: 2px solid #3a3e53;
+}
+
+.container_contacto .formulario_contacto .form-group textarea {
+  width: 100%;
+  font-size: 17px;
+  outline: none;
+  border: none;
+  margin-top: 7px;
+  resize: vertical;
+}
+
+.container_contacto .formulario_contacto .form-group input {
+  margin-top: 7px;
+}
+
+.container_contacto .formulario_contacto .form-group input[type=submit] {
+  margin: 14px auto;
+  cursor: pointer;
+}
+
+.container_contacto .map iframe {
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=main.css.map */

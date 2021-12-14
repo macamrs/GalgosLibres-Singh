@@ -1,6 +1,6 @@
-@import "variables";
-
+/*FOOTER*/
 footer {
+    /*APLICACION DE MAP - DECLARADO EN _VARIABLES.SCSS - */
     background-color: map-get($colores ,secundario);
     padding-top: 15px;
 
@@ -24,6 +24,7 @@ footer {
         }
 
         .nav_footer a {
+            /*APLICACION DE MIXIN*/
             @include navitem;
             color: black; 
             padding-right: 1em;
@@ -32,6 +33,7 @@ footer {
         }
 
         .nav_footer a:hover { 
+            /*APLICACION DE MAP - DECLARADO EN _VARIABLES.SCSS - */
             color: map-get($colores, blanco); 
             transform: translateY(-4px);}
 
