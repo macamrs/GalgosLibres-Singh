@@ -8,16 +8,20 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    padding: 30px;
+    padding: 3rem;
 
     .card_nosotros { 
         margin: 5px 0px 15px 0px;
     }
 
-    .featurette-image {
+    .featurette-image1 {
     width: 25rem;
     height: 80%;
-    border-radius: 20%;
+    border-radius: 79% 21% 83% 17% / 13% 83% 17% 87% ;
+    }
+
+    .featurette-image2 {
+        border-radius: 36% 24% 14% 46% / 37% 22% 52% 20%;
     }
 }
 

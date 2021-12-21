@@ -5,6 +5,21 @@
     background-size: cover;
     background-position: center;
     min-height: 80vh;
+
+    .boton-index {
+        color: colores(babyblue);
+        padding: 7px 12px;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 0.1em;
+        box-shadow: transparent;
+        transition: ease-out 0.5s;   
+        
+        &:hover {
+            box-shadow: transparent;
+            text-decoration: none;
+        }
+    }
 }
 
 .main_deck {
@@ -13,17 +28,37 @@
     .card_index {
         text-align: center;
         padding-top: 1em;
-        padding-bottom: 3em;
+        padding-bottom: 4em;
 
         img {
-            max-width: 25rem;
-            height: 80%;
+            max-width: 22rem;
+            height: 82%;
+            border-radius: 100% 45% 39% 29% / 34% 33% 40% 35% ; 
         }
 
         .card-title {
             padding-top: 1em;
         }
     } 
+}
+
+.container-agrupaciones {
+    padding-bottom: 2em;
+
+    .fila-logos {
+        align-items: center;
+        padding: 1em;
+
+        .logo_protectora {
+            max-width: 10rem;
+            height: 82%;
+            transition: transform 300ms;
+
+            &:hover {
+                @include hoverlogos
+            }
+        }          
+    }    
 }
 
 @media only screen and (max-width: 335px) {

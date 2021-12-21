@@ -1,3 +1,10 @@
+*, body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
 /*HEADER*/
 .header-1 {
   display: -webkit-box;
@@ -8,7 +15,9 @@
       -ms-flex-direction: column;
           flex-direction: column;
   /*APLICACION DE MAP - DECLARADO EN _VARIABLES - */
-  background-color: #f7a2aa;
+  background: #f7a2abd2;
+  -webkit-backdrop-filter: blur(6.5px);
+          backdrop-filter: blur(6.5px);
 }
 
 .header-1 .logo {
@@ -37,7 +46,7 @@
 
 .header-1 .navbar .navbar-nav a {
   /*APLICACION DE MIXIN - DECLARADO EN _VARIABLES - */
-  font-size: 15px;
+  font-size: 14px;
   -webkit-transition: -webkit-transform 250ms;
   transition: -webkit-transform 250ms;
   transition: transform 250ms;
@@ -62,8 +71,9 @@
 /*FOOTER*/
 footer {
   /*APLICACION DE MAP - DECLARADO EN _VARIABLES.SCSS - */
-  background-color: #3A3E53;
+  background-color: #4a536b;
   padding-top: 15px;
+  border-radius: 25% 48% 9% 9% / 15% 14% 0% 0%;
 }
 
 footer .row_footer {
@@ -92,7 +102,7 @@ footer .row_footer .fab {
 
 footer .row_footer .nav_footer a {
   /*APLICACION DE MIXIN*/
-  font-size: 15px;
+  font-size: 14px;
   -webkit-transition: -webkit-transform 250ms;
   transition: -webkit-transform 250ms;
   transition: transform 250ms;
@@ -121,8 +131,8 @@ footer .row_footer .area_circulo .icon {
 
 footer .row_footer .fa-instagram:hover {
   color: #D22987;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 footer .row_footer .fa-facebook:hover {
@@ -147,6 +157,24 @@ footer .row_footer .fa-facebook:hover {
   min-height: 80vh;
 }
 
+.jumbotron-fluid .boton-index {
+  color: #D4E8ED;
+  padding: 7px 12px;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  -webkit-box-shadow: transparent;
+          box-shadow: transparent;
+  -webkit-transition: ease-out 0.5s;
+  transition: ease-out 0.5s;
+}
+
+.jumbotron-fluid .boton-index:hover {
+  -webkit-box-shadow: transparent;
+          box-shadow: transparent;
+  text-decoration: none;
+}
+
 .main_deck {
   padding-top: 1.5em;
 }
@@ -154,16 +182,44 @@ footer .row_footer .fa-facebook:hover {
 .main_deck .card_index {
   text-align: center;
   padding-top: 1em;
-  padding-bottom: 3em;
+  padding-bottom: 4em;
 }
 
 .main_deck .card_index img {
-  max-width: 25rem;
-  height: 80%;
+  max-width: 22rem;
+  height: 82%;
+  border-radius: 100% 45% 39% 29% / 34% 33% 40% 35%;
 }
 
 .main_deck .card_index .card-title {
   padding-top: 1em;
+}
+
+.container-agrupaciones {
+  padding-bottom: 2em;
+}
+
+.container-agrupaciones .fila-logos {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+}
+
+.container-agrupaciones .fila-logos .logo_protectora {
+  max-width: 10rem;
+  height: 82%;
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
+}
+
+.container-agrupaciones .fila-logos .logo_protectora:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all ease 500ms;
+  transition: all ease 500ms;
 }
 
 @media only screen and (max-width: 335px) {
@@ -177,13 +233,13 @@ footer .row_footer .fa-facebook:hover {
 
 /*PAGE NOSOTROS*/
 .contenedor_principal {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   margin-bottom: 1rem;
   text-align: center;
 }
 
 .contenedor_principal h1 {
-  letter-spacing: 5px;
+  letter-spacing: 0.5px;
   font-weight: bolder;
   text-transform: uppercase;
   border-style: solid none;
@@ -203,32 +259,37 @@ footer .row_footer .fa-facebook:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30px;
+  padding: 3rem;
 }
 
 .featurette .card_nosotros {
   margin: 5px 0px 15px 0px;
 }
 
-.featurette .featurette-image {
+.featurette .featurette-image1 {
   width: 25rem;
   height: 80%;
-  border-radius: 20%;
+  border-radius: 79% 21% 83% 17% / 13% 83% 17% 87%;
+}
+
+.featurette .featurette-image2 {
+  border-radius: 36% 24% 14% 46% / 37% 22% 52% 20%;
 }
 
 /*PAGE OBJETIVO*/
 .card_objetivo {
+  padding: 1em;
   margin-bottom: 20px;
 }
 
 .contenedor_principal {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   margin-bottom: 1rem;
   text-align: center;
 }
 
 .contenedor_principal h1 {
-  letter-spacing: 5px;
+  letter-spacing: 0.5px;
   font-weight: bolder;
   text-transform: uppercase;
   border-style: solid none;
@@ -237,13 +298,13 @@ footer .row_footer .fa-facebook:hover {
 
 /*PAGE COLABORAR*/
 .contenedor_principal {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   margin-bottom: 1rem;
   text-align: center;
 }
 
 .contenedor_principal h1 {
-  letter-spacing: 5px;
+  letter-spacing: 0.5px;
   font-weight: bolder;
   text-transform: uppercase;
   border-style: solid none;
@@ -258,17 +319,60 @@ footer .row_footer .fa-facebook:hover {
 .tarjeta-ayudar .card_ayudar img {
   width: 21rem;
   height: 80%;
+  border-radius: 91% 16% 84% 9% / 25% 75% 12% 88%;
+  padding-bottom: 10px;
+}
+
+.tarjeta-ayudar .texto_ayudar {
+  padding-top: 1em;
+}
+
+.ayudar_agrupaciones {
+  padding: 1em;
+}
+
+.ayudar_agrupaciones img {
+  max-width: 25rem;
+  height: 88%;
+  border-radius: 23% 43% 20% 18% / 46% 33% 35% 19%;
+}
+
+.ayudar_agrupaciones p {
+  padding-bottom: 6px;
+}
+
+.ayudar_agrupaciones .logo_prot_ayudar {
+  max-width: 7rem;
+  height: 80%;
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
+}
+
+.ayudar_agrupaciones .logo_prot_ayudar:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all ease 500ms;
+  transition: all ease 500ms;
+}
+
+@media (max-width: 575.98px) {
+  .ayudar_agrupaciones img {
+    max-width: 22rem;
+    height: 80%;
+  }
 }
 
 /*PAGE CONTACTO*/
 .contenedor_principal {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   margin-bottom: 1rem;
   text-align: center;
 }
 
 .contenedor_principal h1 {
-  letter-spacing: 5px;
+  letter-spacing: 0.5px;
   font-weight: bolder;
   text-transform: uppercase;
   border-style: solid none;
@@ -277,7 +381,7 @@ footer .row_footer .fa-facebook:hover {
 
 .container_contacto {
   width: 80%;
-  margin: 4rem auto 4rem auto;
+  margin: 2rem auto 2rem auto;
 }
 
 .container_contacto .formulario_contacto, .container_contacto .formulario_contacto .form-group {
@@ -316,6 +420,10 @@ footer .row_footer .fa-facebook:hover {
   border: 2px solid #3a3e53;
 }
 
+.container_contacto .formulario_contacto .form-group .form-control.desplegable {
+  margin-top: 7px;
+}
+
 .container_contacto .formulario_contacto .form-group textarea {
   width: 100%;
   font-size: 17px;
@@ -335,7 +443,7 @@ footer .row_footer .fa-facebook:hover {
 }
 
 .container_contacto .map iframe {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
 }
 /*# sourceMappingURL=main.css.map */

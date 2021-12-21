@@ -10,6 +10,44 @@
     .card_ayudar img {
     width: 21rem;
     height: 80%;
+    border-radius: 91% 16% 84% 9% / 25% 75% 12% 88%;
+    padding-bottom: 10px;
+    }
+
+    .texto_ayudar {
+        padding-top: 1em;
+    }  
+}
+
+.ayudar_agrupaciones {
+    padding: 1em;
+
+    img {
+        max-width: 25rem;
+        height: 88%;
+        border-radius: 23% 43% 20% 18% / 46% 33% 35% 19%;
+    }
+
+    p {
+        padding-bottom: 6px;
+    }
+
+    .logo_prot_ayudar {
+        max-width: 7rem;
+        height: 80%;
+        transition: transform 300ms;
+
+        &:hover {
+            @include hoverlogos
+        }
     }
 }
 
+@media (max-width: 575.98px) {
+    .ayudar_agrupaciones {
+        img {
+            max-width: 22rem;
+            height: 80%;
+        }
+    }
+}
