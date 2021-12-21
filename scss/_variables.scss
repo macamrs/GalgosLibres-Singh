@@ -1,14 +1,21 @@
+@function colores($color-nombres) {
+    @return map-get($colores, $color-nombres)
+}
+
 $colores : (
-    rosa: #f7a2aa,
+    rosa: #f7a2abd2,
     babyblue: #D4E8ED,
     blanco: #FFFF,
-    secundario: #3A3E53,
+    secundario: #4a536b,
+    violeta: #d9d4e7,
+    negro: #000,
 );
 
 $borde-secundario: 2px solid #3a3e53;
+$margin-contacto: 7px;
 
 @mixin navitem {
-    font-size: 15px;
+    font-size: 14px;
     transition: transform 250ms;
     text-transform: uppercase;
     font-weight: bold;
@@ -16,15 +23,26 @@ $borde-secundario: 2px solid #3a3e53;
 }
 
 @mixin contenedor__titulo {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     margin-bottom: 1rem;
     text-align: center;
     
     h1 {
-        letter-spacing: 5px;
+        letter-spacing: 0.5px;
         font-weight: bolder;
         text-transform: uppercase;
         border-style: solid none;
         padding: 10px 0px 10px;
     }
+}
+
+@mixin hoverlogos {
+    transform: scale(1.1);
+    transition: all ease 500ms;  
+}
+
+* , body {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
 }
