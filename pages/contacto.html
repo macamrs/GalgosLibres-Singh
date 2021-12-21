@@ -11,11 +11,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/main.css">
-        <title>Cómo contactarnos</title>
+        <title>Contactanos</title>
     </head>
     <body>
   <!-- logo + navbar -->
-  <header class="container-fluid header-1">
+  <header class="container-fluid header-1 sticky-top">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light">      
         <a class="navbar-brand logo " href="../index.html"><img src="../img/logosin.png" alt="#" width="100px" height="100px"></a>
@@ -41,10 +41,11 @@
             <div class="row">
                 <div class="col-lg-12 contenedor_principal">               
                     <h1 class="d-flex justify-content-center text-center font-weight-bolder">Contactanos</h1>             
-                    <p class="d-flex justify-content-center text-center">Nuestros encuentros y eventos para difundir la iniciativa y juntar fondos los hacemos en un mismo lugar: Moreno y el rio. Cauqluier cambio de locacion se comunicara por nuestras redes sociales.</p>   
+                    <p class="d-flex justify-content-center text-center h5">Para contactarnos,completa el siguiente formulario </p>   
                 </div>
             </div>
         </div>
+
         <div class="row container_contacto"> 
            <div class="col-lg-6 col-12 formulario_contacto">  
              <!-- formulario --> 
@@ -52,6 +53,15 @@
                     <label for="text" class="font-weight-bolder">FORMULARIO</label>                    
                     <input class="form-control" type="text" name="text" placeholder="Nombre completo">
                     <input class="form-control"  type="text" name="email" placeholder="Email">
+                    <select class="form-control desplegable" name="Opciones">
+                        <option value="0">Asunto</option>
+                            <optgroup label="Opciones de Contacto">
+                                <option value="1">Quiero adoptar</option>
+                                <option value="2">Quiero ser hogar de transito</option>
+                                <option value="3">Quiero donar</option>
+                                <option value="4">Denunciar</option>
+                            </optgroup>
+                    </select>    
                     <textarea class="form-control" name="mensaje" cols="30" rows="13" placeholder="Mensaje"></textarea>
                     <input class="btn btn-outline-success" type="submit" value="Enviar">
                 </form> 
@@ -59,7 +69,10 @@
             <div class="col-lg-6 col-12 embed-responsive embed-responsive-21by9 map"> 
               <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1075.2907758733722!2d-60.6478801341809!3d-32.93162832992292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab36e9913555%3A0x75aa52a2be912cbc!2sCentro%2C%20S2000%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1635523870213!5m2!1ses!2sar" 
               width="90%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>   
+            </div>
+            <div class="container">
+            <p class="d-flex justify-content-center text-center h6">Tratamos de realizar nuestras campañas en un mismo lugar: Moreno y el Rio Paraná. Cualquier cambio lo publicamos en nuestras redes sociales.</p>  
+            </div>
         </div>
     </div>    
      <!-- fin contenido -->
