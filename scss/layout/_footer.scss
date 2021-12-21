@@ -3,6 +3,7 @@ footer {
     /*APLICACION DE MAP - DECLARADO EN _VARIABLES.SCSS - */
     background-color: map-get($colores ,secundario);
     padding-top: 15px;
+    border-radius: 25% 48% 9% 9% / 15% 14% 0% 0%;
 
     .row_footer { 
         padding-top: 25px;
@@ -34,7 +35,7 @@ footer {
 
         .nav_footer a:hover { 
             /*APLICACION DE MAP - DECLARADO EN _VARIABLES.SCSS - */
-            color: map-get($colores, blanco); 
+            color: colores(blanco); 
             transform: translateY(-4px);}
 
         .area_circulo .icon {
@@ -44,7 +45,7 @@ footer {
 
         .fa-instagram:hover  {
                 color: #D22987;
-                transition: .5s;
+                transition: .2s;
             }
         
         .fa-facebook:hover {
