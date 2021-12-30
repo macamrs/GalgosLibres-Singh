@@ -1,3 +1,9 @@
+* , body {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+
 @function colores($color-nombres) {
     @return map-get($colores, $color-nombres)
 }
@@ -39,10 +45,4 @@ $margin-contacto: 7px;
 @mixin hoverlogos {
     transform: scale(1.1);
     transition: all ease 500ms;  
-}
-
-* , body {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    -webkit-text-size-adjust: 100%;
 }
