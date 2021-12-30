@@ -154,7 +154,16 @@ footer .row_footer .fa-facebook:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 80vh;
+  min-height: 90vh;
+}
+
+.jumbotron-fluid h1 {
+  color: black;
+}
+
+.jumbotron-fluid p {
+  color: black;
+  font-weight: 340;
 }
 
 .jumbotron-fluid .boton-index {
