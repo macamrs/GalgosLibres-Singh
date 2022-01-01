@@ -1,6 +1,6 @@
 /*FOOTER*/
 footer {
-    /*APLICACION DE MAP - DECLARADO EN _VARIABLES.SCSS - */
+    /*APLICACIÓN DE MAP - DECLARADO EN _VARIABLES.SCSS - */
     background-color: map-get($colores ,secundario);
     padding-top: 15px;
     border-radius: 25% 48% 9% 9% / 15% 14% 0% 0%;
@@ -25,7 +25,7 @@ footer {
         }
 
         .nav_footer a {
-            /*APLICACION DE MIXIN*/
+            /*APLICACIÓN DE MIXIN*/
             @include navitem;
             color: black; 
             padding-right: 1em;
@@ -34,7 +34,7 @@ footer {
         }
 
         .nav_footer a:hover { 
-            /*APLICACION DE MAP - DECLARADO EN _VARIABLES.SCSS - */
+            /*APLICACIÓN DE MAP - DECLARADO EN _VARIABLES.SCSS - */
             color: colores(blanco); 
             transform: translateY(-4px);}
 
@@ -55,12 +55,12 @@ footer {
     }
 }
 
-@media only screen and (max-width: 335px) {
+@media only screen and (min-width: 0) and (max-width: 768px) {
     footer {
         .row_footer {
             .nav_footer {
                 a {
-                 font-size: 12px;
+                 font-size: 2.5vw;
                  font-weight: bold;
                 }   
             }
