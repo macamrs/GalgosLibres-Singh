@@ -4,15 +4,19 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 90vh;
+    min-height: 88vh;
 
     h1 {
         color: black;
+        padding-top: 3rem;
     }
 
     p {
+        padding-top: 3rem;
+        padding-bottom: 1rem;
         color: black;
-        font-weight: 340;
+        font-weight: 350;
+        font-size: 2.5vh;
     }
 
     .boton-index {
@@ -40,8 +44,8 @@
         padding-bottom: 4em;
 
         img {
-            max-width: 22rem;
-            height: 82%;
+            max-width: 46vh;
+            height: 80%;
             border-radius: 100% 45% 39% 29% / 34% 33% 40% 35% ; 
         }
 
@@ -59,7 +63,8 @@
         padding: 1em;
 
         .logo_protectora {
-            max-width: 10rem;
+            padding: 10px 0 10px 0;
+            max-width: clamp(8rem, 10vw, 5rem);
             height: 82%;
             transition: transform 300ms;
 
