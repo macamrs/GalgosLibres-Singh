@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *, body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -70,7 +71,7 @@
 
 /*FOOTER*/
 footer {
-  /*APLICACION DE MAP - DECLARADO EN _VARIABLES.SCSS - */
+  /*APLICACIÓN DE MAP - DECLARADO EN _VARIABLES.SCSS - */
   background-color: #4a536b;
   padding-top: 15px;
   border-radius: 25% 48% 9% 9% / 15% 14% 0% 0%;
@@ -101,7 +102,7 @@ footer .row_footer .fab {
 }
 
 footer .row_footer .nav_footer a {
-  /*APLICACION DE MIXIN*/
+  /*APLICACIÓN DE MIXIN*/
   font-size: 14px;
   -webkit-transition: -webkit-transform 250ms;
   transition: -webkit-transform 250ms;
@@ -117,7 +118,7 @@ footer .row_footer .nav_footer a {
 }
 
 footer .row_footer .nav_footer a:hover {
-  /*APLICACION DE MAP - DECLARADO EN _VARIABLES.SCSS - */
+  /*APLICACIÓN DE MAP - DECLARADO EN _VARIABLES.SCSS - */
   color: #FFFF;
   -webkit-transform: translateY(-4px);
           transform: translateY(-4px);
@@ -141,9 +142,9 @@ footer .row_footer .fa-facebook:hover {
   transition: .2s;
 }
 
-@media only screen and (max-width: 335px) {
+@media only screen and (min-width: 0) and (max-width: 768px) {
   footer .row_footer .nav_footer a {
-    font-size: 12px;
+    font-size: 2.5vw;
     font-weight: bold;
   }
 }
@@ -154,16 +155,20 @@ footer .row_footer .fa-facebook:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 90vh;
+  min-height: 88vh;
 }
 
 .jumbotron-fluid h1 {
   color: black;
+  padding-top: 3rem;
 }
 
 .jumbotron-fluid p {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
   color: black;
-  font-weight: 340;
+  font-weight: 350;
+  font-size: 2.5vh;
 }
 
 .jumbotron-fluid .boton-index {
@@ -195,8 +200,8 @@ footer .row_footer .fa-facebook:hover {
 }
 
 .main_deck .card_index img {
-  max-width: 22rem;
-  height: 82%;
+  max-width: 46vh;
+  height: 80%;
   border-radius: 100% 45% 39% 29% / 34% 33% 40% 35%;
 }
 
@@ -216,7 +221,8 @@ footer .row_footer .fa-facebook:hover {
 }
 
 .container-agrupaciones .fila-logos .logo_protectora {
-  max-width: 10rem;
+  padding: 10px 0 10px 0;
+  max-width: clamp(8rem, 10vw, 5rem);
   height: 82%;
   -webkit-transition: -webkit-transform 300ms;
   transition: -webkit-transform 300ms;
@@ -231,12 +237,15 @@ footer .row_footer .fa-facebook:hover {
   transition: all ease 500ms;
 }
 
-@media only screen and (max-width: 335px) {
+@media only screen and (min-width: 0px) and (max-width: 998px) {
   .jumbotron-fluid {
     min-height: 65vh;
   }
   .jumbotron-fluid h1 {
     font-size: 50px;
+  }
+  .container-agrupaciones {
+    text-align: center;
   }
 }
 
@@ -248,6 +257,7 @@ footer .row_footer .fa-facebook:hover {
 }
 
 .contenedor_principal h1 {
+  font-size: clamp(0.5rem, 10vw, 3rem);
   letter-spacing: 0.5px;
   font-weight: bolder;
   text-transform: uppercase;
@@ -276,8 +286,6 @@ footer .row_footer .fa-facebook:hover {
 }
 
 .featurette .featurette-image1 {
-  width: 25rem;
-  height: 80%;
   border-radius: 79% 21% 83% 17% / 13% 83% 17% 87%;
 }
 
@@ -288,7 +296,6 @@ footer .row_footer .fa-facebook:hover {
 /*PAGE OBJETIVO*/
 .card_objetivo {
   padding: 1em;
-  margin-bottom: 20px;
 }
 
 .contenedor_principal {
@@ -298,6 +305,7 @@ footer .row_footer .fa-facebook:hover {
 }
 
 .contenedor_principal h1 {
+  font-size: clamp(0.5rem, 10vw, 3rem);
   letter-spacing: 0.5px;
   font-weight: bolder;
   text-transform: uppercase;
@@ -313,6 +321,7 @@ footer .row_footer .fa-facebook:hover {
 }
 
 .contenedor_principal h1 {
+  font-size: clamp(0.5rem, 10vw, 3rem);
   letter-spacing: 0.5px;
   font-weight: bolder;
   text-transform: uppercase;
@@ -337,12 +346,12 @@ footer .row_footer .fa-facebook:hover {
 }
 
 .ayudar_agrupaciones {
-  padding: 1em;
+  padding: 1em 0 1em 0;
 }
 
 .ayudar_agrupaciones img {
-  max-width: 25rem;
-  height: 88%;
+  max-width: 23rem;
+  height: 80%;
   border-radius: 23% 43% 20% 18% / 46% 33% 35% 19%;
 }
 
@@ -351,8 +360,9 @@ footer .row_footer .fa-facebook:hover {
 }
 
 .ayudar_agrupaciones .logo_prot_ayudar {
-  max-width: 7rem;
-  height: 80%;
+  padding: 10px 0 10px 0;
+  max-width: clamp(8rem, 10vw, 5rem);
+  height: 82%;
   -webkit-transition: -webkit-transform 300ms;
   transition: -webkit-transform 300ms;
   transition: transform 300ms;
@@ -366,9 +376,9 @@ footer .row_footer .fa-facebook:hover {
   transition: all ease 500ms;
 }
 
-@media (max-width: 575.98px) {
+@media only screen and (max-width: 335px) {
   .ayudar_agrupaciones img {
-    max-width: 22rem;
+    max-width: 18rem;
     height: 80%;
   }
 }
@@ -381,6 +391,7 @@ footer .row_footer .fa-facebook:hover {
 }
 
 .contenedor_principal h1 {
+  font-size: clamp(0.5rem, 10vw, 3rem);
   letter-spacing: 0.5px;
   font-weight: bolder;
   text-transform: uppercase;
@@ -404,12 +415,12 @@ footer .row_footer .fa-facebook:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /*APLICACION DE @EXTEND*/
+  /*APLICACIÓN DE @EXTEND*/
 }
 
 .container_contacto .formulario_contacto .form-group {
   width: 80%;
-  /*APLICACION DE MAP - DECLARADO EN _VARIABLES - */
+  /*APLICACIÓN DE MAP - DECLARADO EN _VARIABLES - */
 }
 
 .container_contacto .formulario_contacto .form-group label {
